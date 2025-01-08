@@ -1,0 +1,15 @@
+run = "uvicorn src.main:app --host 0.0.0.0 --port 8000"
+
+hidden = [".pythonlibs"]
+modules = ["pyright-extended", "docker", "python-3.12", "web"]
+
+[nix]
+channel = "stable-23_05"
+
+[deployment]
+run = ["uvicorn", "vm_image_converter/src/main:app", "--host", "0.0.0.0"]
+deploymentTarget = "cloudrun"
+
+[[ports]]
+localPort = 8000
+externalPort = 80

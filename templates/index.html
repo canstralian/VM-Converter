@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>VM Image Converter</title>
+    <link rel="stylesheet" type="text/css" href="/static/styles.css">
+</head>
+<body>
+    <h1>Convert VM Images</h1>
+    <form action="/convert" method="post" enctype="multipart/form-data">
+        <label for="file">Upload file:</label>
+        <input type="file" id="file" name="file" required>
+        <label for="input_format">Input format:</label>
+        <input type="text" id="input_format" name="input_format" required>
+        <label for="format">Output format:</label>
+        <input type="text" id="format" name="format" required>
+        <button type="submit">Convert</button>
+    </form>
+</body>
+</html>
