@@ -2,7 +2,7 @@
 name = "vm-converter"
 version = "0.1.0"
 description = ""
-authors = ["Canstralian <distortedprojection@gmail.com>"]
+authors = ["Canstralian"]
 license = "MIT"
 
 [tool.poetry.dependencies]
